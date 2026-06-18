@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.파일ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.종료ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.비디오대여ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.비디오관리ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.고객관리ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -47,7 +48,6 @@
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
-            this.종료ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -76,35 +76,47 @@
             this.파일ToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
             this.파일ToolStripMenuItem.Text = "파일";
             // 
+            // 종료ToolStripMenuItem
+            // 
+            this.종료ToolStripMenuItem.Name = "종료ToolStripMenuItem";
+            this.종료ToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
+            this.종료ToolStripMenuItem.Text = "종료";
+            this.종료ToolStripMenuItem.Click += new System.EventHandler(this.종료ToolStripMenuItem_Click);
+            // 
             // 비디오대여ToolStripMenuItem
             // 
             this.비디오대여ToolStripMenuItem.Name = "비디오대여ToolStripMenuItem";
             this.비디오대여ToolStripMenuItem.Size = new System.Drawing.Size(112, 20);
             this.비디오대여ToolStripMenuItem.Text = "비디오 대여/반납";
+            this.비디오대여ToolStripMenuItem.Click += new System.EventHandler(this.비디오대여ToolStripMenuItem_Click);
             // 
             // 비디오관리ToolStripMenuItem
             // 
             this.비디오관리ToolStripMenuItem.Name = "비디오관리ToolStripMenuItem";
             this.비디오관리ToolStripMenuItem.Size = new System.Drawing.Size(83, 20);
             this.비디오관리ToolStripMenuItem.Text = "비디오 관리";
+            this.비디오관리ToolStripMenuItem.Click += new System.EventHandler(this.비디오관리ToolStripMenuItem_Click);
             // 
             // 고객관리ToolStripMenuItem
             // 
             this.고객관리ToolStripMenuItem.Name = "고객관리ToolStripMenuItem";
             this.고객관리ToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
             this.고객관리ToolStripMenuItem.Text = "고객관리";
+            this.고객관리ToolStripMenuItem.Click += new System.EventHandler(this.고객관리ToolStripMenuItem_Click);
             // 
             // 정보조회ToolStripMenuItem
             // 
             this.정보조회ToolStripMenuItem.Name = "정보조회ToolStripMenuItem";
             this.정보조회ToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.정보조회ToolStripMenuItem.Text = "정보 조회";
+            this.정보조회ToolStripMenuItem.Click += new System.EventHandler(this.정보조회ToolStripMenuItem_Click);
             // 
             // 환경설정ToolStripMenuItem
             // 
             this.환경설정ToolStripMenuItem.Name = "환경설정ToolStripMenuItem";
             this.환경설정ToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
             this.환경설정ToolStripMenuItem.Text = "환경설정";
+            this.환경설정ToolStripMenuItem.Click += new System.EventHandler(this.환경설정ToolStripMenuItem_Click);
             // 
             // 도우말ToolStripMenuItem
             // 
@@ -193,13 +205,6 @@
             this.toolStripButton5.Text = "환경설정";
             this.toolStripButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolStripButton5.Click += new System.EventHandler(this.toolStripButton5_Click);
-            // 
-            // 종료ToolStripMenuItem
-            // 
-            this.종료ToolStripMenuItem.Name = "종료ToolStripMenuItem";
-            this.종료ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.종료ToolStripMenuItem.Text = "종료";
-            this.종료ToolStripMenuItem.Click += new System.EventHandler(this.종료ToolStripMenuItem_Click);
             // 
             // Form1
             // 

@@ -31,8 +31,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,15 +65,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "엑셀로 출력";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(30, 38);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(123, 38);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "비디오 목록";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(182, 38);
@@ -82,6 +73,17 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "대여 현황";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(30, 38);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(123, 38);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "비디오 목록";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form6
             // 
@@ -93,6 +95,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form6";
             this.Text = "비디오 정보";
+            this.Load += new System.EventHandler(this.Form6_Load);
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
